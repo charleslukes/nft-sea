@@ -2,7 +2,7 @@
 
 - clone the project
 - create an alchemy key see [here](https://dashboard.alchemy.com/) 
-- create a .env.local file and add you key like so: ```ALCHEMY_KEY=xxxxxxx```
+- create a .env.local file and add your key like so: ```ALCHEMY_KEY=xxxxxxx```
 - yarn install 
 - run on dev mode 
 
@@ -15,7 +15,7 @@ pnpm dev
 ```
 
 ### Struggles
-- Opensea testnet api don't work on the browser (as at this time). Spent a lot of time trying to figure why its so, had to revert to alchemy. 
+- Opensea testnet api don't work on the browser at this time (cors errors). Spent a lot of time trying to figure why its so, had to revert to alchemy. 
 
 ### Improvements that could be done
 - Implement pagination

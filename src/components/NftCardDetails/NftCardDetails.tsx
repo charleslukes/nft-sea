@@ -14,9 +14,7 @@ const NftCardDetails: React.FC<NftCardDetailsPropType> = ({
   image,
   ownerAddr,
   handleClick,
-}) => {
-    console.log({ownerAddr});
-    
+}) => {    
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
