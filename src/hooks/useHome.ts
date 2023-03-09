@@ -48,7 +48,7 @@ export const useHome = () => {
         ownerAddrData = owner.owners[0];
       } catch (e: any) {
         // this could happen due to rate limit
-        ownerAddrData = e.message
+        ownerAddrData = e.message;
       }
       setNftDetails({ ...selectedNft, ownerAddr: ownerAddrData });
     }
@@ -79,6 +79,8 @@ export const useHome = () => {
     if (event.key === "Enter" && searchText) {
       Web3.utils.isAddress(searchText)
         ? getAllNfts(searchText)
+            .then((res) => res)
+            .catch((e) => alert(e.message))
         : alert("Not a valid ethereum address");
     }
   };
