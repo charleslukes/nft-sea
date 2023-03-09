@@ -1,0 +1,33 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 8px;
+    background: #0c0c0c;
+    cursor: pointer;
+}
+
+.cardImage {
+    width: 100%;
+    height: 12rem;
+    border-radius: 8px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.headerText {
+    color: #efefef;
+    margin: 10px 0px 5px 0;
+}
+
+.priceColor {
+    color: #7b70ff;
+    font-size: 15px;
+}
+
+.info {
+    font-size: 14px;
+    color: #707173;
+}
