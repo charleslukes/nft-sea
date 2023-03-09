@@ -25,8 +25,8 @@ const NftCardDetails: React.FC<NftCardDetailsPropType> = ({
       <div>
         <h3>{name}</h3>
         <div className={styles.ownerContainer}>
-          <span>Owned by: </span>
-          <span className={styles.description}>{ownerAddr}</span>
+          <div>Owned by: </div>
+          <div className={styles.description}>{ownerAddr}</div>
         </div>
         <div>
           <button className={styles.btn} onClick={handleClick}>

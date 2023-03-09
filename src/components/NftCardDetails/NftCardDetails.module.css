@@ -33,10 +33,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.ownerContainer > span {
+.ownerContainer > div {
     margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .btn {
@@ -47,4 +49,5 @@
     background-color: #7b70ff;
     font-weight: 500;
     color: #efefef;
+    cursor: pointer;
 }
