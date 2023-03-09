@@ -1,0 +1,50 @@
+.container {
+ width: 60rem;
+ border-radius: 20px;
+ display: flex;
+ background: #0c0c0c;
+ color: #efefef;
+ padding: 2rem 1rem;
+}
+
+.imageContainer {
+ width: 50%;
+ margin-right: 25px;
+}
+
+.image {
+    width: 400px;
+    border-radius: 20px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.descriptionHeader {
+    margin: 10px 0;
+}
+
+.description {
+    color: #707173;
+    font-size: 14px;
+}
+
+.ownerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ownerContainer > span {
+    margin-right: 5px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #7b70ff;
+    font-weight: 500;
+    color: #efefef;
+}
