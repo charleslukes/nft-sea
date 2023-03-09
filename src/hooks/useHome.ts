@@ -39,14 +39,18 @@ export const useHome = () => {
 
   const handleClick = async (tokenId: number | string) => {
     const selectedNft = allNfts.find((nft) => nft.tokenId === tokenId);
+    let ownerAddrData = "fetching...";
     if (!!selectedNft) {
+      setNftDetails({ ...selectedNft, ownerAddr: ownerAddrData });
+      openModal();
       try {
         const owner = await getNftOwner(selectedNft.contract.address, +tokenId);
-        setNftDetails({ ...selectedNft, ownerAddr: owner.owners[0] });
-        openModal();
+        ownerAddrData = owner.owners[0];
       } catch (e: any) {
-        alert(e.message);
+        // this could happen due to rate limit
+        ownerAddrData = e.message
       }
+      setNftDetails({ ...selectedNft, ownerAddr: ownerAddrData });
     }
   };
 
